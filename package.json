@@ -1,0 +1,24 @@
+{
+  "name": "vuex-ts-issue",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Repro of a Vuex TypeScript issue",
+  "main": "index.html",
+  "author": "Mikael Selander",
+  "license": "MIT",
+  "dependencies": {
+    "systemjs": "^0.21.3",
+    "vue": "^2.5.16",
+    "vue-class-component": "^6.2.0",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "build": "node ./node_modules/typescript/bin/tsc -p ./tsconfig.json",
+    "server": "node ./node_modules/http-server/bin/http-server . -p 8080",
+    "start": "npm run build && npm run server"
+  }
+}
